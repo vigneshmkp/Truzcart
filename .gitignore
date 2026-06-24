@@ -1,0 +1,22 @@
+# Spring Boot
+truzcart-backend/target/
+
+# React
+truzcart-frontend/node_modules/
+truzcart-frontend/dist/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# Environment
+.env
+application-local.properties
+
+# OS files
+Thumbs.db
+.DS_Store
