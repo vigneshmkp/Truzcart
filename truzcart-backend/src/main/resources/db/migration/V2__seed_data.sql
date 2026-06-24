@@ -89,7 +89,7 @@ SELECT 'Bamboo Cutting Board Set', 'bamboo-cutting-board-set', 'Set of 3 organic
 FROM categories c WHERE c.slug = 'household';
 
 -- Coupons
-INSERT INTO coupons (code, description, discount_type, discount_value, min_purchase, max_discount, start_date, end_date, max_usage, used_count, active)
+INSERT INTO coupons (code, description, discount_type, discount_value, min_order_amount, max_discount, valid_from, valid_until, usage_limit, used_count, active)
 VALUES
   ('WELCOME10', 'Welcome discount — 10% off your first order', 'PERCENTAGE', 10.00, 200.00, 500.00, NOW(), NOW() + INTERVAL '1 year', 1000, 0, true),
   ('FLAT100', 'Flat ₹100 off on orders above ₹999', 'FIXED', 100.00, 999.00, 100.00, NOW(), NOW() + INTERVAL '6 months', 500, 0, true),
